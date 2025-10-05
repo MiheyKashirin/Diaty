@@ -78,7 +78,7 @@ Grade → Users (Student) (студент отримує оцінки)
 ------------------------------------------
 Ресурси та ендпоіинти
 
-1. Users (користувачі)
+1. Users
 
 GET /users/ — отримати список усіх користувачів
 GET /users/{user_id} — отримати деталі конкретного користувача
@@ -86,7 +86,7 @@ POST /users/ — створити нового користувача
 PUT /users/{user_id} — оновити дані користувача
 DELETE /users/{user_id} — видалити користувача
 ------------------------------------------
-2. Roles (ролі)
+2. Roles
 
 GET /roles/ — список ролей
 GET /roles/{role_id} — деталі конкретної ролі
@@ -94,13 +94,13 @@ POST /roles/ — створити роль
 PUT /roles/{role_id} — оновити роль
 DELETE /roles/{role_id} — видалити роль
 ------------------------------------------
-3. User-role (прив’язка користувача до ролі)
+3. User-role
 
 GET /users/{user_id}/roles/ — отримати ролі користувача
 POST /users/{user_id}/roles/ — додати роль користувачу
 DELETE /users/{user_id}/roles/{role_id} — видалити роль у користувача
 ------------------------------------------
-4. Class (класи)
+4. Class
 
 GET /classes/ — отримати всі класи
 GET /classes/{class_id} — отримати конкретний клас
@@ -108,13 +108,13 @@ POST /classes/ — створити новий клас
 PUT /classes/{class_id} — оновити дані класу
 DELETE /classes/{class_id} — видалити клас
 ------------------------------------------
-5. Class-User (зв’язок студентів із класами)
+5. Class-User
 
 GET /classes/{class_id}/users/ — список студентів у класі
 POST /classes/{class_id}/users/ — додати студента до класу
 DELETE /classes/{class_id}/users/{user_id} — видалити студента з класу
 ------------------------------------------
-6. Lesson (заняття)
+6. Lesson
 
 GET /lessons/ — отримати всі заняття
 GET /lessons/{lesson_id} — отримати конкретне заняття
@@ -122,7 +122,7 @@ POST /lessons/ — створити нове заняття
 PUT /lessons/{lesson_id} — оновити дані заняття
 DELETE /lessons/{lesson_id} — видалити заняття
 ------------------------------------------
-7. Grade (оцінки)
+7. Grade
 
 GET /grades/ — список усіх оцінок
 GET /grades/{grade_id} — отримати конкретну оцінку
@@ -130,7 +130,7 @@ POST /grades/ — поставити оцінку студенту
 PUT /grades/{grade_id} — оновити оцінку
 DELETE /grades/{grade_id} — видалити оцінку
 ------------------------------------------
-8. Lesson-type (типи занять)
+8. Lesson-type
 
 GET /lesson-types/ — список типів занять (предметів)
 GET /lesson-types/{type_id} — отримати конкретний тип
@@ -138,13 +138,13 @@ POST /lesson-types/ — створити новий тип заняття
 PUT /lesson-types/{type_id} — оновити тип заняття
 DELETE /lesson-types/{type_id} — видалити тип заняття
 ------------------------------------------
-9. Teacher-Lesson (зв’язок викладачів із предметами)
+9. Teacher-Lesson
 
 GET /teachers/{teacher_id}/lessons/ — отримати всі предмети викладача
 POST /teachers/{teacher_id}/lessons/ — додати викладачу новий предмет
 DELETE /teachers/{teacher_id}/lessons/{lesson_id} — видалити предмет у викладача
 ------------------------------------------
-10. Room (аудиторії)
+10. Room 
 
 GET /rooms/ — список усіх аудиторій
 GET /rooms/{room_id} — деталі конкретної аудиторії
