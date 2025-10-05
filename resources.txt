@@ -144,7 +144,7 @@ GET /teachers/{teacher_id}/lessons/ — отримати всі предмети
 POST /teachers/{teacher_id}/lessons/ — додати викладачу новий предмет
 DELETE /teachers/{teacher_id}/lessons/{lesson_id} — видалити предмет у викладача
 ------------------------------------------
-10. Room 
+10. Room ''
 
 GET /rooms/ — список усіх аудиторій
 GET /rooms/{room_id} — деталі конкретної аудиторії
