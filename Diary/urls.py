@@ -17,10 +17,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.shortcuts import redirect
+import common_data.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', lambda request: redirect('student/')),  # пустой путь ведёт на /student/
+    path('login/', common_data.views.login_handler, name='login'),
+    path('logout/', common_data.views.logout_handler, name='logout'),
+    path('profile/', common_data.views.profile, name='profile'),
+    path('register/', common_data.views.register_handler, name='register'),
+    path('', lambda request: redirect('student/')),
     path('student/', include('student.urls')),
     path('teacher/', include('teacher.urls')),
 ]
+
